@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lissitzky</title>
+	<meta name="viewport" content="width=device-width, initial-scale1.0">
+	<link rel="stylesheet"  href="">
+	<link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		ul li:hover{
+			opacity: 0;
+			transition: opacity 2s;
+		}
+		ul li{
+			opacity: 1;
+		}
+		h1{
+			font-family: 'Black Ops One', cursive;
+			
+			font-size: 100px;
+			transform: rotate(25deg);
+			position: absolute;
+			left: 10%;
+			top: 10%;
+		}
+		body{
+			overflow: hidden;
+
+		}
+		#cercle{
+			background: white;
+			width: 700px;
+			height: 700px;
+			z-index: 10;
+			top: 180px;
+			left: 50%;
+			border-radius: 400px;
+			position: absolute;
+		}
+		/* RECTANGELES */
+		#rectangle{
+			background: black;
+			position: fixed;
+			width: 200%;
+			height: 200%;
+			transform: rotate(20deg);
+			left: 50%;
+			position: absolute;
+    		z-index: 5;
+		}
+		#rectangle1{
+			background: white;
+			position: absolute;
+			width: 80px;
+			height: 10px;
+			/*transform: rotate(20deg);*/
+			left: 75%;
+    		z-index: 15;
+    		top: 5%;
+		}
+		#rectangle2{
+			background: white;
+			position: absolute;
+			width: 100px;
+			height: 10px;
+			transform: rotate(-15deg);
+			left: 64.2%;
+    		z-index: 15;
+    		top: 7%;
+		}
+		#rectangle3{
+			background: red;
+			position: absolute;
+			width: 100px;
+			height: 10px;
+			transform: rotate(-15deg);
+			left: 63.5%;
+    		z-index: 17;
+    		top: 6.8%;
+		}
+		#rectangle4{
+			background: white;
+			position: absolute;
+			width: 20px;
+			height: 10px;
+			/*transform: rotate(-15deg);*/
+			left: 68.5%;
+    		z-index: 15;
+    		top: 5.5%;
+		}
+		
+		#rectangle5{
+			background: red;
+			position: absolute;
+			width: 200px;
+			height: 10px;
+			transform: rotate(5deg);
+			left: 28%;
+    		z-index: 15;
+    		top: 70%;
+		}
+		#rectangle6{
+			background: red;
+			position: absolute;
+			width: 30px;
+			height: 75px;
+			transform: rotate(5deg);
+			left: 35%;
+    		z-index: 15;
+    		top: 75%;
+		}
+		#rectangle7{
+			background: red;
+			position: absolute;
+			width: 6px;
+			height: 25px;
+			transform: rotate(-86deg);
+			left: 38%;
+    		z-index: 15;
+    		top: 75%;
+		}
+		#rectangle8{
+			background: red;
+			position: absolute;
+			width: 6px;
+			height: 25px;
+			transform: rotate(-86deg);
+			left: 37.9%;
+    		z-index: 15;
+    		top: 78%;
+		}
+		#rectangle9{
+			background: red;
+			position: absolute;
+			width: 6px;
+			height: 25px;
+			transform: rotate(-86deg);
+			left: 37.7%;
+    		z-index: 15;
+    		top: 81%;
+		}
+		#rectangle10{
+			background: red;
+			position: absolute;
+			width: 100px;
+			height: 7px;
+			/*	transform: rotate(-86deg);*/
+			left: 58%;
+    		z-index: 15;
+    		top: 27.7%;
+		}
+		#rectangle11{
+			background: white;
+			position: absolute;
+			width: 50px;
+			height: 10px;
+			/*transform: rotate(-15deg);*/
+			left: 78%;
+    		z-index: 15;
+    		top: 7%;
+		}
+		#rectangle12{
+			background: white;
+			position: absolute;
+			width: 40px;
+			height: 5px;
+			/*transform: rotate(-15deg);*/
+			left: 82%;
+    		z-index: 15;
+    		top: 9%;
+		}
+
+		/* TRIANGLES */
+		#triangle{
+			
+			width: 0px;
+     		height: 0px; 
+     		border-left: 600px solid #ff0000;
+    		border-top: 150px solid transparent;
+    		border-bottom: 150px solid transparent;
+     		position: absolute;
+     		left: 32%;
+     		transform: rotate(25deg);
+     		top: 310px;
+     		z-index: 20; 
+		}
+		#triangle1{
+			
+			width: 0px;
+     		height: 0px; 
+     		border-left: 150px solid #ff0000;
+    		border-top: 15px solid transparent;
+    		border-bottom: 15px solid transparent;
+     		position: absolute;
+     		left: 70%;
+     		transform: rotate(-25deg);
+     		top: 200px;
+     		z-index: 20;
+		}
+		#triangle2{
+			
+			width: 0px;
+     		height: 0px; 
+     		border-left: 100px solid #ff0000;
+    		border-top: 7px solid transparent;
+    		border-bottom: 7px solid transparent;
+     		position: absolute;
+     		left: 56%;
+     		transform: rotate(5deg);
+     		top: 250px;
+     		z-index: 20;
+     	}
+     	/* QUADRATS */
+		#quadrat{
+			width: 125px; 
+    		height: 200px;
+    		background: grey;
+    		position: absolute;
+    		left: 50%;
+    		top: 150px;
+    		transform: rotate(60deg);	
+		}
+		#quadrat2{
+			width: 125px; 
+    		height: 200px;
+    		background: grey;
+    		position: absolute;
+    		left: 47%;
+    		top: 500px;
+    		/*transform: rotate(deg);*/
+		}
+	</style>
+</head>
+<body>
+	<h1>KANHOM</h1>
+	<div id="rectangle"></div>
+	<div id="rectangle1"></div>
+	<div id="rectangle2"></div>
+	<div id="rectangle3"></div>
+	<div id="rectangle4"></div>
+	<div id="rectangle5"></div>
+	<div id="rectangle6"></div>
+	<div id="rectangle7"></div>
+	<div id="rectangle8"></div>
+	<div id="rectangle9"></div>
+	<div id="rectangle10"></div>
+	<div id="rectangle11"></div>
+	<div id="rectangle12"></div>
+	<div id="cercle"></div>
+	<div id="triangle"></div>
+	<div id="triangle1"></div>
+	<div id="triangle2"></div>
+	<div id="quadrat2"></div>
+	<div id="quadrat"></div>
+</body>
+</html>
